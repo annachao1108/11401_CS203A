@@ -9,8 +9,9 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.h
-
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+    - 2025/11/23-0: Initial version by Yu-Feng Huang
+    - 2025/11/23-1: Final version with the same logic as C++ version
+   Developer: Wan-Yun Chao <annam512ac@gmail.com>
  */
 
 #include "hash_fn.h"
