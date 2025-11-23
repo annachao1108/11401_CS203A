@@ -9,6 +9,7 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.hpp
+    - 2025/11/23-0: Initial version by Yu-Feng Huang
     - 2025/11/23-1: Modified hash integar function for better distribution
     - 2025/11/23-2: Modified hash string function for better distribution / fixed bug in integar hash function
     (every time created new array) -> use basic division method and number tweak instead 
