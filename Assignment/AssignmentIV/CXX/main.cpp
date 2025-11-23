@@ -10,7 +10,8 @@
 
    Development History:
     - 2025/11/11: Initial implementation
-
+    - 2025/11/17: Implemented main.cpp to test integar hash functions
+    
    Developer: Wan-Yun Chao <annam512ac@gmail.com>
  */
 
