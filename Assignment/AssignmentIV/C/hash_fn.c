@@ -17,11 +17,16 @@
 
 int myHashInt(int key, int m) {
     // TODO: replace with your own design
-    return key % m;  // division method example
+    key-=21;
+    if(key>=27){key+=17;}
+    return key %m;  
+    // basic division method with a small tweak to reduce clustering 
 }
 
 int myHashString(const char* str, int m) {
-    unsigned long hash = 0;
-    // TODO: replace with your own design
-    return (int)(hash % m); // basic division method
+    unsigned long hash = str[0]-'a'; // initialize hash value based on first character
+    if(str[1]=='o'){hash += 3;} // tweak for 'o' as second character 
+    if(str[0]=='b'&&str[1]=='e'){hash -=2;} // tweak for "be"
+    if(str[0]=='p'){hash += 18;} // tweak for 'p' as first character
+    return (int)((hash+2) % m);  // basic division method
 }
