@@ -7,6 +7,7 @@ Before you begin, ensure you have the following:
 - A GitHub account.
 
 ## Steps to Connect to GitHub
+0.**Use window/vscode MinGW gcc 6.3.0**
 
 1. **Install the GitHub Extension for VSCode**
     - Open VSCode.
@@ -14,7 +15,7 @@ Before you begin, ensure you have the following:
     - Search for "GitHub Pull Requests and Issues" and install the extension.
 
 2. **Sign in to GitHub**
-    - Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+    - Open the Command Palette.
     - Type `GitHub: Sign in` and select the option.
     - Follow the prompts to authenticate with your GitHub account.
 
@@ -38,7 +39,7 @@ Before you begin, ensure you have the following:
     - This will push your changes to the GitHub repository.
 
 ## Additional Tips
-- Use the built-in terminal in VSCode for advanced Git commands.
+- Use the built-in terminal in VSCode for advanced Git commands.(For example: git add ./git commit -m "edits"/git push)
 - Enable GitLens extension for enhanced Git insights.
 
 By following these steps, you can easily connect and manage your GitHub repositories using Visual Studio Code.
