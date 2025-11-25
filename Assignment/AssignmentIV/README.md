@@ -343,7 +343,7 @@ https://ithelp.ithome.com.tw/m/articles/10268077
 也沒說可以改除了function的地方，即使可以，m在執行function才提到具體多大，仍不可行。最後透過各種嘗試才訂出這樣的結果。
 讓每個數值都有唯一的index。
 在不同英文字中原本想利用純看第一個字，但發現重複的太多。利用三個字在英文字母中排名第幾相加，也仍是很多碰撞。
-最後才會以像調整數那般做單獨處裡。
+最後才以像調整數那般做單獨處理。
 
 觀察發現:
 - Prime table sizes (11, 37) provide more uniform distribution.
