@@ -6,14 +6,18 @@ evaluate their efficiency, and understand their applications in computer science
 
 Developer: [Wan-Yun Chao]  
 Email: [annam512ac@gmail.com]  
+### C/C++ Compiler
+-windows10
+-vscode MinGW gcc 6.3.0
 
 ## My Hash Function
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [key-=21;
+  [hash(key,m){
+    key-=21;
     if(key>=27){key+=17;}
-    return key %m;]
+    return key %m;}]
   ```
 - Rationale: [
 I observed that the test keys start at 21, so I first shift the range by subtracting 21 to make 21 map to index 0.
@@ -26,11 +30,12 @@ Finally, modulo m is applied to keep the index within table size.]
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [unsigned long hash = str[0]-'a'; // initialize hash value based on first character
+  [hash(str){
+    unsigned long hash = str[0]-'a'; // initialize hash value based on first character
     if(str[1]=='o'){hash += 3;} // tweak for 'o' as second character 
     if(str[0]=='b'&&str[1]=='e'){hash -=2;} // tweak for "be"
     if(str[0]=='p'){hash += 18;} // tweak for 'p' as first character
-    return static_cast<int>((hash+2) % m);  // basic division method]
+    return static_cast<int>((hash+2) % m);  // basic division method}]
   ```
 - Rationale: [The hash starts from the first character to ensure different initial letters produce different indices.
 However, many words share the same first letter, so I introduce additional adjustments:
@@ -63,42 +68,61 @@ Modulo ensures the result stays within the hash table size.]
 - The project uses a comprehensive Makefile that builds both C and C++ versions with proper flags:
   ```bash
   # Build both C and C++ versions
-  make all
+  .\Makefile.bat all
   
   # Build only C version
-  make c
+  .\Makefile.bat c
   
   # Build only C++ version
-  make cxx
+  .\Makefile.bat cxx
   ```
+  ![程式執行結果](screenshots/output.png)
+  ![程式執行結果](screenshots/bat.png)
+  ![程式執行結果](screenshots/c.png)
+  ![程式執行結果](screenshots/cxx.png)
+
+
+
 
 ### Manual Compilation (if needed)
 - Command for C:
   ```bash
-  gcc -std=c23 -Wall -Wextra -Wpedantic -g -o C/hash_function C/main.c C/hash_fn.c
+  cd "C:\Users\user\11401_CS203A\Assignment\AssignmentIV\C"
+  g++ main.c hash_fn.c -o main
+  .\main
   ```
 - Command for C++:
   ```bash
-  g++ -std=c++23 -Wall -Wextra -Wpedantic -g -o CXX/hash_function_cpp CXX/main.cpp CXX/hash_fn.cpp
+  cd "C:\Users\user\11401_CS203A\Assignment\AssignmentIV\CPP"
+  g++ main.cpp hash_fn.cpp -o main
+  .\main
+  
   ```
 
 ### Clean Build Files
 - Remove all compiled files:
   ```bash
-  make clean
+  .\Makefile.bat clean
   ```
+  ![程式執行結果](screenshots/clean.png)
 
 ### Execution
 - Run the compiled binary:
   ```bash
-  ./hash_function
+  .\C\hash_function.exe
   ```
   or
   ```bash
-  ./hash_function_cpp
+  .\CXX\hash_function_cpp.exe
   ```
 
+
 ### Result Snapshot
+  ![程式執行結果](screenshots/output0.png)
+  ![程式執行結果](screenshots/output1.png)
+  ![程式執行結果](screenshots/output2.png)
+  ![程式執行結果](screenshots/output3.png)
+  ![程式執行結果](screenshots/output4.png)
 - Example output for integers:
   ```
   === Hash Function Observation (C Version) ===
@@ -309,6 +333,19 @@ Modulo ensures the result stays within the hash table size.]
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 
 ## Analysis
+參考資料:
+https://ithelp.ithome.com.tw/m/articles/10268077
+
+設計:
+原本給的範例是用mod，發現很多數值會有明顯重複。但經過參考，像是Middle Square。發現也不適用於這裡，數值重複也有發生。
+參考Folding Addition，認為這裡提供的數值普遍小，m也小，容易重複。最一開始也有嘗試做Linear Probing，有放入其中一版，
+但除了這不是hash function該做的事以外，每次在執行function才又new int一個array是不可行的，舊的數值根本沒存到，
+也沒說可以改除了function的地方，即使可以，m在執行function才提到具體多大，仍不可行。最後透過各種嘗試才訂出這樣的結果。
+讓每個數值都有唯一的index。
+在不同英文字中原本想利用純看第一個字，但發現重複的太多。利用三個字在英文字母中排名第幾相加，也仍是很多碰撞。
+最後才會以像調整數那般做單獨處裡。
+
+觀察發現:
 - Prime table sizes (11, 37) provide more uniform distribution.
 - Non-prime sizes (10) create cyclic patterns and collisions.
 - Integer hash design effectively separates the two test ranges.
@@ -316,6 +353,9 @@ Modulo ensures the result stays within the hash table size.]
 - A bigger prime table size can reduce conflicts.
 
 ## Reflection
+設計上採用質數較不易讓每個遇到的數字都有它的因數，導致最後mod出來都是0。
+mod越大的數值，還有m越大越不容易遭遇碰撞，如果m空間很小，那麼不免俗的值就只能有少數的變化去存。
+字串部分如若m可以確保大於所有須處理的數據，那將可以以字串上的英文排序做編號，例如abc直接成為010203，zad260104等等。
 1. Hash function design requires balancing simplicity and collision avoidance.
 2.Table size has a strong impact on distribution quality.
 3.My design performs better with prime m and produces predictable, analyzable behavior.
