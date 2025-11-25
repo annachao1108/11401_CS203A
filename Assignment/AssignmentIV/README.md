@@ -76,7 +76,7 @@ Modulo ensures the result stays within the hash table size.]
   # Build only C++ version
   .\Makefile.bat cxx
   ```
-  ![程式執行結果](screenshots/output.png)
+  ![程式執行結果](screenshots/all.png)
   ![程式執行結果](screenshots/bat.png)
   ![程式執行結果](screenshots/c.png)
   ![程式執行結果](screenshots/cxx.png)
