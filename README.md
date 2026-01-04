@@ -15,25 +15,25 @@ Homepage link: [https://annachao1108.github.io/annachao1108.github/]
 It's a class record for learning data structures. 
 
 ## 11401_CS203A final project
-Assignment/
-├─ AssignmentIV/
-├─ AssignmentV/
-Definition/
-├─ Array/
-│  ├─ codes/
-│  └─ README.md
-├─ Graph/
-│  └─ README.md
-├─ Hash/
-│  ├─ codes/
-│  └─ README.md
-├─ Heap/
-│  └─ README.md
-├─ LinkedList/
-│  └─ README.md
-├─ Stack & Queue/
-│  └─ README.md
-├─ Tree/
-│  └─ README.md
-└─ README.md
+Assignment/ </br>
+├─ AssignmentIV/ </br>
+├─ AssignmentV/ </br>
+Definition/ </br>
+├─ Array/ </br>
+│  ├─ codes/ </br>
+│  └─ README.md </br>
+├─ Graph/ </br>
+│  └─ README.md </br>
+├─ Hash/ </br>
+│  ├─ codes/ </br>
+│  └─ README.md </br>
+├─ Heap/ </br>
+│  └─ README.md </br>
+├─ LinkedList/ </br>
+│  └─ README.md </br>
+├─ Stack & Queue/ </br>
+│  └─ README.md </br>
+├─ Tree/ </br>
+│  └─ README.md </br>
+└─ README.md </br>
 
