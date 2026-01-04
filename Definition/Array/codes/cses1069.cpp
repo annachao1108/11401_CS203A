@@ -1,4 +1,5 @@
 //string is a special character array
+// Explanation: https://hackmd.io/@yun666/cses_repetitions
 #include <algorithm>
 #include <iostream>
 using namespace std;
