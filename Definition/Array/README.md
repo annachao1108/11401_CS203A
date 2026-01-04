@@ -1,4 +1,4 @@
-# Array (summarize with gpt)
+# Array (co-authorized with gpt)
 
 ## Definition
 An array is a linear data structure that stores elements of the same
