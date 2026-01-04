@@ -60,4 +60,12 @@ Another unique feature of array containers is that they can be treated as tuple 
 - Confusing array index with element value
 
 ## Implementations
-
+atcoder319A.cpp
+cses1069.cpp
+uva00272.cpp
+uva00490.cpp
+uva10008.cpp
+zerojudge_a005.cpp
+zerojudge_a009.cpp
+zerojudge_a013.cpp
+zerojudge_a015.cpp
