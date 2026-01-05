@@ -48,3 +48,6 @@ Other function object types can be used as Hash for unordered containers provide
 
 ## Implementation
 -Leetcode1.cpp
+
+## links from website
+[https://www.geeksforgeeks.org/cpp/stdhash-class-in-c-stl/]
