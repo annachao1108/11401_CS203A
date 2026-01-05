@@ -15,10 +15,10 @@ Homepage link: [https://annachao1108.github.io/annachao1108.github/]
 It's a class record for learning data structures. 
 
 ## 11401_CS203A final project
-Assignment/ </br>
-├─ AssignmentIV/ </br>
-├─ AssignmentV/ </br>
-Definition/ </br>
+Assignment/  </br>
+├─ AssignmentIV/ about hash implement </br>
+├─ AssignmentV/ about tree&heap  </br>
+Definition/ (definition in readme.md快速查閱) </br>
 ├─ Array/ </br>
 │  ├─ codes/ </br>
 │  └─ README.md </br>
