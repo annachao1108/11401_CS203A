@@ -21,6 +21,9 @@ Last In First Out (LIFO) principle.
 - Expression evaluation
 - Undo / Redo
 
+### links from website
+[https://www.w3schools.com/cpp/cpp_stacks.asp] </br>
+[https://cppreference.com/w/cpp/container/stack.html] </br>
 ---
 
 ## Queue
@@ -44,6 +47,10 @@ First In First Out (FIFO) principle.
 - Buffer management
 - BFS traversal
 
-## Common Mistakes
+### Common Mistakes
 - Stack overflow / underflow
 - Forgetting circular condition in queue
+
+### links from website
+[https://cppreference.com/w/cpp/container/queue.html] </br>
+[https://www.w3schools.com/cpp/cpp_queues.asp] </br>
