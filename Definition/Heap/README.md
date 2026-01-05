@@ -31,3 +31,6 @@ A heap is a complete binary tree that satisfies the heap property.
 - Confusing heap with BST
 - Forgetting heap property after insertion
 - Incorrect parent/child index calculation
+
+## links from website
+[https://www.geeksforgeeks.org/cpp/implement-heap-in-c/]
