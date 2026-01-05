@@ -22,8 +22,10 @@ Last In First Out (LIFO) principle.
 - Undo / Redo
 
 ### links from website
+
 [https://www.w3schools.com/cpp/cpp_stacks.asp] </br>
 [https://cppreference.com/w/cpp/container/stack.html] </br>
+
 ---
 
 ## Queue
