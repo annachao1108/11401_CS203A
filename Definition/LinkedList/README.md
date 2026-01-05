@@ -47,3 +47,6 @@ next node.
 
 - HW: Linked list insertion/deletion
 - Exam: Pointer tracing
+
+## links from website
+[https://www.geeksforgeeks.org/cpp/cpp-linked-list/] struct跟pointer去實作
