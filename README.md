@@ -39,3 +39,6 @@ Definition/ (definition in readme.md快速查閱) </br>
 
 ## Future Plan
 - continue to update structure & codes
+
+## Prompt for readme.md
+-請以markdown語法幫我生程內容 我希望有定義、使用時機、實例等等 請檢查我提供的內容並幫我以markdown生成
