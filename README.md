@@ -16,8 +16,12 @@ It's a class record for learning data structures.
 
 ## 11401_CS203A final project
 Assignment/  </br>
+├─ AssignmentII/ about array/selection sort </br>
+├─ AssignmentIII/ about linked list/selection sort </br>
 ├─ AssignmentIV/ about hash implement </br>
 ├─ AssignmentV/ about tree&heap  </br>
+Quiz/  </br>
+├─ Quiz1,2,3,5  </br>
 Definition/ (definition in readme.md快速查閱) </br>
 ├─ Array/ </br>
 │  ├─ codes/ </br>
@@ -26,6 +30,7 @@ Definition/ (definition in readme.md快速查閱) </br>
 │  └─ README.md </br>
 ├─ Hash/ </br>
 │  ├─ codes/ </br>
+│  ├─ studynote_hash </br>
 │  └─ README.md </br>
 ├─ Heap/ </br>
 │  └─ README.md </br>
